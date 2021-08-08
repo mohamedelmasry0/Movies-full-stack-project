@@ -1,14 +1,19 @@
 const mongoose = require("mongoose");
 const userRatingsModel = new mongoose.Schema({
    
-    email: {
+    rating: {
         type: String,
         require: true
     },
-    password: {
+    commentTitle: {
+        type: String,
+        require: true
+    },
+    commentContent: {
         type: String,
         require: true
     }
+
     
     
 

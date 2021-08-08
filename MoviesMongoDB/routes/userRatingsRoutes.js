@@ -29,17 +29,18 @@ router.post('/add', async (req, res)=>{
 
     }
 
-    router.delete('/:userRatingsId', function (req, res, next) {
-        const userRatingsId = req.params.userRatingsId
-        
-        userRatingsModel.findOneAndDelete({
-            _id: userRatingsId
-        }).then(userRatings => {
-            res.status(200).send('user well deleted !')
-        })
-        .catch(error => next(error))
+ 
+})
+router.delete('/:userRatingsId', function (req, res, next) {
+    const userRatingsId = req.params.userRatingsId
     
-      
+    UserRatings.findOneAndDelete({
+        _id: userRatingsId
+    }).then(userRatings => {
+        res.status(200).send('rating well deleted !')
     })
+    .catch(error => next(error))
+
+  
 })
 module.exports= router;

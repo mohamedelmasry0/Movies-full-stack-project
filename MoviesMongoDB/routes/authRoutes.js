@@ -15,7 +15,18 @@ router.get('/', (req, res, next) => {
     })
     .catch(error => next(error))
 })
+router.delete('/:userId', function (req, res, next) {
+    const userId = req.params.userId
+    
+    User.findOneAndDelete({
+        _id: userId
+    }).then(users => {
+        res.status(200).send('user well deleted !')
+    })
+    .catch(error => next(error))
 
+  
+})
 
 router.post('/register', async (req, res)=>{
     //res.send('register');
@@ -36,17 +47,6 @@ router.post('/register', async (req, res)=>{
 
     }
 
-    router.delete('/:userId', function (req, res, next) {
-        const userId = req.params.userId
-        
-        userModel.findOneAndDelete({
-            _id: userId
-        }).then(users => {
-            res.status(200).send('user well deleted !')
-        })
-        .catch(error => next(error))
     
-      
-    })
 })
 module.exports= router;

@@ -9,7 +9,7 @@ require('./config/db');
 
 //Import routes
 const authRoutes = require('./routes/authRoutes');
-const userRoutes = require('./routes/userRoutes');
+//const userRoutes = require('./routes/userRoutes');
 const moviesDefinitionRoutes = require('./routes/moviesDefinitionRoutes');
 const userRatingsRoutes = require('./routes/userRatingsRoutes');
 

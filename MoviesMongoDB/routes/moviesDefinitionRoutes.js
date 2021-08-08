@@ -32,4 +32,16 @@ router.post('/add', async (req, res)=>{
 
     }
 })
+router.delete('/:id', function (req, res, next) {
+    const id = req.params.id
+    
+    MoviesDefinition.findOneAndDelete({
+        _id: id
+    }).then(moviesDefinitions => {
+        res.status(200).send('def well deleted !')
+    })
+    .catch(error => next(error))
+
+  
+})
 module.exports= router;
