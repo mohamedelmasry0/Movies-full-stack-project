@@ -43,4 +43,23 @@ router.delete('/:userRatingsId', function (req, res, next) {
 
   
 })
+router.put('/:ratId', function (req, res, next) {
+    const ratId = req.params.ratId
+    
+    UserRatings.findOneAndUpdate({
+        _id: ratId
+    }, {
+    
+  
+        rating: req.body.rating,
+        commentTitle: req.body.commentTitle,
+        commentContent: req.body.commentContent
+	
+	
+    })
+    .then(userRatings => res.status(200).send(userRatings))
+    .catch(error => next(error))
+    
+   
+})
 module.exports= router;

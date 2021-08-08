@@ -49,4 +49,21 @@ router.post('/register', async (req, res)=>{
 
     
 })
+router.put('/:userId', function (req, res, next) {
+    const userId = req.params.userId
+    
+   User.findOneAndUpdate({
+        _id: userId
+    }, {
+    
+    email: req.body.email,
+	password: req.body.password
+	
+	
+    })
+    .then(users => res.status(200).send(users))
+    .catch(error => next(error))
+    
+   
+})
 module.exports= router;

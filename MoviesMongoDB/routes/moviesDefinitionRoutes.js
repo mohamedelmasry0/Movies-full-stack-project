@@ -44,4 +44,24 @@ router.delete('/:id', function (req, res, next) {
 
   
 })
+router.put('/:defId', function (req, res, next) {
+    const defId = req.params.defId
+    
+    MoviesDefinition.findOneAndUpdate({
+        _id: defId
+    }, {
+    
+  
+    title: req.body.title,
+    releaseDate: req.body.releaseDate,
+    category: req.body.category,
+    movieDirector: req.body.movieDirector
+	
+	
+    })
+    .then(moviesDefinitions => res.status(200).send(moviesDefinitions))
+    .catch(error => next(error))
+    
+   
+})
 module.exports= router;
