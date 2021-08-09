@@ -29,7 +29,17 @@ const Home = () => {
            
            {/* </div> */}
            {/* <Users /> */}
-
+           <div>
+           <div className = "row">
+             
+             </div>
+             <div className = "row">
+            
+             </div>
+             <div className = "row">
+             
+             </div>
+             </div>
 
         </div>
     );

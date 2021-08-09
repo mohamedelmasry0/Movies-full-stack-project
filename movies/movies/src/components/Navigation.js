@@ -7,31 +7,35 @@ const Navigation = () => {
         <div className= "sideBar">
             
             <div>
-                <NavLink exact to= "/" activeClassName="navActive1">
+                <NavLink exact to= "/" activeClassName="navActive">
                    
                     <BiFilm/>
-                    <span>Acueil</span>
+                    <span className="sideLinks">Acueil</span>
                     <br/>
                     <br/>     
                 </NavLink> 
 
-                <NavLink exact to= "/lastseen" activeClassName="navActive2">
+                <NavLink exact to= "/lastseen" activeClassName="navActive">
                   
                     <BiFilm/>
-                    <span>last seen movies</span>    
+                    <span className="sideLinks">last seen movies</span>    
                     <br/> 
                     <br/> 
                 </NavLink> 
 
-                <NavLink exact to= "/new" activeClassName="navActive3">
+                <NavLink exact to= "/new" activeClassName="navActive">
                     {/* <i className= "BiFilm"></i> */}
                     <BiFilm/>
-                    <span>new movies</span>   
+                    <span className="sideLinks">new movies</span>   
                     <br/> 
                     <br/> 
                                
                 </NavLink> 
-                
+               
+            </div>
+            <div className= "top">
+                <h1>Bienvenu movies</h1><h2> by ELMASRY</h2>
+                <h3> regarde des films gratuit</h3>
             </div>
         </div>
     );
