@@ -1,0 +1,25 @@
+.top{
+    background-color: $color-2;
+    font-style: $font-1;;
+    font-size: large;
+    background-position-x: right;
+    background-position-y: center;
+    object-position: center;
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+
+}
+.mainImg{
+    background-color: $color-3;
+    object-position: center;
+}
+.sideBar{
+    background-color: $color-1;
+    font-style: $font-2;
+    font-size: large;
+    background-position-x: right;
+    background-position-y: center;
+    object-position: center;
+    
+}

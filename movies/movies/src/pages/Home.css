@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  color: rgb(12, 121, 66);
+  justify-content: space-evenly;
+}
+.mainImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1; /*behind others*/
+  margin-bottom: -150px;
+  /* mask-image: linear-gradient(to bottom, color =blue); */
+  width: 100%;
+  height: 500px;
+}
