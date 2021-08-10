@@ -1,0 +1,27 @@
+.sideBar {
+  background-color: rgb(253, 236, 2);
+  position: fixed;
+  background-position: bottom;
+  background-size: 50%;
+  width: 10%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  padding: 20px 20px 20px 20px;
+  /* font-size: 25px; */
+}
+.sideLinks {
+  color: rgb(43, 226, 98);
+  /* padding-top: 40cm; */
+}
+
+/* .sideBar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+} */
+.sideLinks {
+  font-size: 20px;
+}

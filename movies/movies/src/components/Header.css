@@ -1,0 +1,89 @@
+.header {
+  height: 60px;
+  display: flex; /* horizontal */
+  align-items: center;
+  background-color: rgb(1, 4, 48);
+  position: sticky;
+  top: 0;
+  /* z-index: 100; */
+  width: 100%;
+}
+/* img {
+  width: 500px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+} */
+.header_logo {
+  width: 50px;
+  object-fit: contain;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.header_nav {
+  color: aliceblue;
+  display: flex;
+  position: absolute;
+  left: 77%;
+  justify-content: space-evenly;
+}
+.searchYes {
+  color: coral;
+  padding: 5px;
+  height: 22px !important;
+  background-color: rgb(80, 45, 1);
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  flex: 1;
+  position: relative;
+  left: 129px;
+  /*height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%; */
+}
+.enterSearch {
+  height: 12px;
+  padding: 10px;
+  width: 16cm;
+}
+.sign {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+category .order {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+.country {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+.cartIcon {
+  color: coral;
+  padding: 5px;
+  /* height: 22px !important; */
+  /* background-color: rgb(80, 45, 1); */
+  margin-right: 1px;
+}
+.cart {
+  /* flex: 1; */
+  display: flex;
+}
+.countCart {
+  margin-right: 12px;
+
+  padding: 5px;
+  color: aliceblue;
+}
