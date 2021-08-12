@@ -1,7 +1,9 @@
 .home {
-  display: flex;
+  /* display: flex;
   color: rgb(12, 121, 66);
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 /* /* .mainImg {
   display: block;
@@ -24,9 +26,9 @@ img {
   width: 300px;
   height: 200px;
 }
-.MartyrsImg {
+/* .MartyrsImg {
   margin-left: -1.5cm;
-}
+} */
 .topMovies {
   padding-left: 7cm;
 }
