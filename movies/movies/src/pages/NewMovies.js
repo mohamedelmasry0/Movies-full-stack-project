@@ -1,11 +1,17 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-
+import './NewMovies.css'
+import ListFilm from '../components/ListFilm';
 const NewMovies = () => {
     return (
-        <div>
+        <div className="new">
+            <div className="nav">
             <Navigation/>
-           Consultez les nouveaux films 
+            </div>
+            <div className="wel">
+           Consultez les nouveaux films
+           <ListFilm/> 
+           </div>
         </div> 
     );
 };

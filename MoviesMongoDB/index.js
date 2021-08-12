@@ -12,6 +12,7 @@ const authRoutes = require('./routes/authRoutes');
 //const userRoutes = require('./routes/userRoutes');
 const moviesDefinitionRoutes = require('./routes/moviesDefinitionRoutes');
 const userRatingsRoutes = require('./routes/userRatingsRoutes');
+const filmRoutes = require('./routes/filmRoutes');
 
 //Middle ware
 app.use(express.json());
@@ -23,6 +24,7 @@ app.use(helmet())
 app.use('/api/user', authRoutes);
 app.use('/api/def', moviesDefinitionRoutes);
 app.use('/api/rating', userRatingsRoutes);
+app.use('/api/film', filmRoutes);
 
 
 

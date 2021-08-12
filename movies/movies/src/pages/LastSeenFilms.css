@@ -1,6 +1,12 @@
 .welcome {
   margin-left: 10cm;
 }
-/* .lstsn {
-  
-} */
+.lstsn {
+  display: flex;
+}
+.def {
+  margin-left: 10cm;
+  margin-right: 10cm;
+  padding: 31cm;
+  color: aqua;
+}
