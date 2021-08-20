@@ -1,17 +1,14 @@
 import React from "react";
-import "./Film.css";
 import { useStateValue } from "../StateProvider";
-const Film = ({ imageFilm, title, year, link }) => {
-  const [, dispatch] = useStateValue();
-  const seenBefore = () => {
+
+import "./Film.css";
+
+function SeenFilm({ link, imageFilm, title, year }) {
+  const [, dispatch] = useStateValue(); //here for removing only
+  const unseen = () => {
     dispatch({
-      type: "SEEN",
-      item: {
-        imageFilm: imageFilm,
-        title: title,
-        year: year,
-        link: link,
-      },
+      type: "UNSEEN",
+      title: title,
     });
   };
   return (
@@ -23,9 +20,9 @@ const Film = ({ imageFilm, title, year, link }) => {
           <div className="year">{year}</div>
         </div>
       </a>
-      <button onClick={seenBefore}>Seen </button>
+      <button onClick={unseen}>Remove from seen list</button>
     </div>
   );
-};
+}
 
-export default Film;
+export default SeenFilm;

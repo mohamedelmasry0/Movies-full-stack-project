@@ -26,8 +26,11 @@
   color: aliceblue;
   display: flex;
   position: absolute;
-  left: 77%;
+  left: 69%;
   justify-content: space-evenly;
+}
+.logLink {
+  color: aliceblue;
 }
 .searchYes {
   color: coral;
@@ -85,5 +88,13 @@ category .order {
   margin-right: 12px;
 
   padding: 5px;
+  color: aliceblue;
+}
+.searchBacket {
+  display: flex;
+  align-items: center;
+  padding: 1cm;
+}
+.numSeen {
   color: aliceblue;
 }

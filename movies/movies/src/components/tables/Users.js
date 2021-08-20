@@ -8,10 +8,10 @@ function Users() {
   // componentDidMount()
   useEffect(() => {
     fetch("http://localhost:8092/users")
-      .then(res => res.json())
+      .then((res) => res.json())
       .then(
         (result) => {
-            console.log("here", result)
+          console.log("here", result);
           setIsLoaded(true);
           setItems(result.items);
         },
@@ -22,8 +22,8 @@ function Users() {
           setIsLoaded(true);
           setError(error);
         }
-      )
-  }, [])
+      );
+  }, []);
 
   if (error) {
     return <div>Erreur : {error.message}</div>;
@@ -32,7 +32,7 @@ function Users() {
   } else {
     return (
       <ul>
-        {items.map(item => (
+        {items.map((item) => (
           <li key={item.name}>
             {item.name} {item.price}
           </li>
@@ -41,8 +41,7 @@ function Users() {
     );
   }
 }
- export default Users;
-
+export default Users;
 
 // import React from 'react';
 
@@ -51,17 +50,16 @@ function Users() {
 //     // return (
 //     //     <div>
 //     //         {Users.map(user => {
-                
+
 //     //                 {"id : " + user.id + " - username: " + user.userName}
 //     //                 console.log(user);
-                
+
 //     //         })}
 //     //         {/* Users.array.forEach(element => {
 //     //             {"id : " + user.id + " - username: " + user.userName}
 //     //             console.log(Users);
 //     //         }); */}
-            
+
 //     //     </div>
 //     );
 // };
-
