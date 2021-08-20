@@ -1,0 +1,17 @@
+.logIn {
+  margin-left: 43%;
+  margin-right: 15.5cm;
+  margin-top: 1cm;
+  display: block;
+  align-items: center;
+  border: 3px solid tomato;
+  background-color: rgb(160, 114, 160);
+  background-size: contain;
+}
+.mailcss {
+  padding: 0.5cm;
+  border: 3px solid tomato;
+}
+.up {
+  margin-bottom: 0.5cm;
+}
