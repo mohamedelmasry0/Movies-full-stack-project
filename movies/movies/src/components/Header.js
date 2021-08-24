@@ -5,6 +5,7 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { useStateValue } from "../StateProvider";
 import { auth } from "../fireBase";
+import { IconButton, ListItemIcon } from "@material-ui/core";
 
 const Header = () => {
   const [{ seen, user }] = useStateValue();
@@ -13,6 +14,7 @@ const Header = () => {
       auth.signOut();
     }
   };
+
   return (
     <div className="header">
       <a href="/">
@@ -20,17 +22,24 @@ const Header = () => {
       </a>
       <div className="searchBar">
         <input className="enterSearch" type={Text} />
-        <SearchIcon className="searchYes" />
+        <IconButton>
+          <SearchIcon className="searchYes" />
+        </IconButton>
       </div>
       <div className="searchBacket">
-        <VisibilityIcon className="searchYes" />
+        <IconButton>
+          <a href="/lastseen">
+            <VisibilityIcon className="searchYes" />
+          </a>
+        </IconButton>
 
         <div className="numSeen">{seen?.length}</div>
       </div>
       <div className="header_nav">
         <div className="sign">
           <span>
-            Hello guest<br></br>
+            Hello {!user ? "guest" : user.email}
+            <br></br>
             <div onClick={signingOut}>
               <a href="/login" className="logLink">
                 {user ? "sign out" : "sign in"}
@@ -46,8 +55,11 @@ const Header = () => {
         </div>
         <div className="bin"></div>
       </div>
+
       <div className="cart">
-        <SettingsIcon className="cartIcon" />
+        <IconButton>
+          <SettingsIcon className="cartIcon" />
+        </IconButton>
       </div>
     </div>
   );
