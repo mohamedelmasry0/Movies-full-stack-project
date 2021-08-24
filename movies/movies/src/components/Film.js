@@ -1,6 +1,7 @@
 import React from "react";
 import "./Film.css";
 import { useStateValue } from "../StateProvider";
+
 const Film = ({ imageFilm, title, year, link }) => {
   const [, dispatch] = useStateValue();
   const seenBefore = () => {
@@ -14,10 +15,11 @@ const Film = ({ imageFilm, title, year, link }) => {
       },
     });
   };
+
   return (
     <div className="film">
       <a href={link}>
-        <img src={imageFilm} alt="" />
+        <img on src={imageFilm} alt="" />
         <div className="spefi">
           <h2 className="title">{title}</h2>
           <div className="year">{year}</div>

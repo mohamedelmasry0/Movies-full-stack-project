@@ -58,6 +58,28 @@ const Home = () => {
              <img src= "./media/18945570.jpg" alt ="" className="MartyrsImg"/>
              </div> */}
       </div>
+
+      <div className="row1">
+        <Film
+          imageFilm="./media/billetterie-zapata-la-soiree-de-l-academie-des-sorciers-internet-explorer.jpg"
+          title="Harry Potter"
+          year="2004"
+          link="https://www.primevideo.com/detail/Harry-Potter-And-The-Sorcerer-s-Stone/0JXM9K5QSXG0X1O6M4CHGIYACB?_encoding=UTF8&language=fr_FR"
+        ></Film>
+        <Film
+          imageFilm="./media/cover-r4x3w1000-58357e3755770-titanic-titanic-07-01-1998-19-12-1997-3-g.jpg"
+          title="Titanic"
+          year="1997"
+          link="https://www.primevideo.com/detail/0PI02ZDBZ8T1HK11K9OHYK27R2/ref=atv_nb_lcl_fr_FR?language=fr_FR&ie=UTF8"
+        ></Film>
+
+        <Film
+          imageFilm="./media/91OBD9PmUUL._AC_SL1500_.jpg"
+          title="Lion King"
+          year="1994 "
+          link="https://www.primevideo.com/detail/The-Lion-King-The-Walt-Disney-Signature-Collection/0H3CDEGV427NJ1GYJ7HGMN6X32"
+        ></Film>
+      </div>
     </div>
   );
 };
