@@ -3,8 +3,10 @@ import "./Film.css";
 import { useStateValue } from "../StateProvider";
 
 const Film = ({ imageFilm, title, year, link }) => {
+  const [disable, setDisable] = React.useState(false);
   const [, dispatch] = useStateValue();
   const seenBefore = () => {
+    setDisable(true);
     dispatch({
       type: "SEEN",
       item: {
@@ -25,7 +27,9 @@ const Film = ({ imageFilm, title, year, link }) => {
           <div className="year">{year}</div>
         </div>
       </a>
-      <button onClick={seenBefore}>Seen </button>
+      <button disabled={disable} onClick={seenBefore}>
+        Seen{" "}
+      </button>
     </div>
   );
 };
