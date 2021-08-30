@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "../axios";
+// import FilmInList from "./FilmInList";
+
 import "./ListFilm.css";
 function ListFilm() {
   const [film, setFilm] = useState([]);
@@ -14,14 +16,23 @@ function ListFilm() {
   return (
     <>
       <h1>List films</h1>
-      <ul className="data">
+      {/* <ul className="data"> */}
+      {/* <ul> */}
+      <div>
         {film.map((filmMap) => (
           <li key={filmMap._id}>
             <div className="title">{filmMap.name}</div>
             <img src={filmMap.link} alt="" />
           </li>
+          // <FilmInList
+          //   className="dfv"
+          //   title={filmMap.title}
+          //   link={filmMap.link}
+          // />
         ))}
-      </ul>
+
+        {/* </ul> */}
+      </div>
     </>
   );
 }
