@@ -10,8 +10,10 @@ import LogIn from "./pages/LogIn";
 import "./App.css";
 import { auth } from "./fireBase";
 import { useStateValue } from "./StateProvider";
+import Footer from "./components/Footer";
+
 const App = () => {
-  const [{}, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       console.log("user changed", authUser);
@@ -47,6 +49,7 @@ const App = () => {
             </Switch>
           </IconContext.Provider>
         </BrowserRouter>
+        <Footer />
       </div>
     </>
 

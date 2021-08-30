@@ -1,9 +1,12 @@
 import React from "react";
 import "./Film.css";
 import { useStateValue } from "../StateProvider";
+
 const Film = ({ imageFilm, title, year, link }) => {
+  const [disable, setDisable] = React.useState(false);
   const [, dispatch] = useStateValue();
   const seenBefore = () => {
+    setDisable(true);
     dispatch({
       type: "SEEN",
       item: {
@@ -14,16 +17,19 @@ const Film = ({ imageFilm, title, year, link }) => {
       },
     });
   };
+
   return (
     <div className="film">
       <a href={link}>
-        <img src={imageFilm} alt="" />
+        <img on src={imageFilm} alt="" />
         <div className="spefi">
           <h2 className="title">{title}</h2>
           <div className="year">{year}</div>
         </div>
       </a>
-      <button onClick={seenBefore}>Seen </button>
+      <button disabled={disable} onClick={seenBefore}>
+        Seen{" "}
+      </button>
     </div>
   );
 };

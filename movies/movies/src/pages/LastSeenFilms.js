@@ -4,6 +4,7 @@ import "./LastSeenFilms.css";
 
 import { useStateValue } from "../StateProvider";
 import SeenFilm from "../components/SeenFilm";
+
 function LastSeenFilms() {
   const [{ seen }] = useStateValue();
   return (
