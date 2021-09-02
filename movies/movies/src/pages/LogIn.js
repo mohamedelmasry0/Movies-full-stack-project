@@ -31,12 +31,16 @@ const LogIn = () => {
       <form className="formlog">
         <div className="mailcss">Email</div>
         <input
+          className="frm"
+          id="Email"
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <div className="mailcss">Password</div>
         <input
+          className="frm"
+          id="Psswrod"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}

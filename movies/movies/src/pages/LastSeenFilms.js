@@ -10,22 +10,25 @@ function LastSeenFilms() {
   return (
     <div className="lstsn">
       <Navigation />
-      <div className="welcome">
+      <h1 className="welcome">
         Bienvenu dans la page des derniers films vus
         {/* <ListMoviesDefinitions className="def" /> */}
+      </h1>
+      <div className="seenn">
+        <ul className>
+          {seen.map((item) => (
+            <li className>
+              <SeenFilm
+                className
+                link={item.link}
+                imageFilm={item.imageFilm}
+                title={item.title}
+                year={item.year}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className="seen">
-        {seen.map((item) => (
-          <li className>
-            <SeenFilm
-              link={item.link}
-              imageFilm={item.imageFilm}
-              title={item.title}
-              year={item.year}
-            />
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }

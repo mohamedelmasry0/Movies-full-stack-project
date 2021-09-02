@@ -1,6 +1,15 @@
-.title {
+.titleList {
   font-size: larger;
   color: darkblue;
   background-color: red;
   margin-top: 2cm;
+  width: 100%;
+  padding: 1px;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

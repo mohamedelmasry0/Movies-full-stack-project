@@ -1,17 +1,38 @@
 .logIn {
-  margin-left: 43%;
+  /* margin-left: 43%;
   margin-right: 15.5cm;
-  margin-top: 1cm;
+  margin-top: 1cm; */
+  margin: 10px 5cm;
   display: block;
   align-items: center;
   border: 3px solid tomato;
-  background-color: rgb(160, 114, 160);
+  background-color: rgba(160, 114, 160, 0.767);
   background-size: contain;
+  padding: 10px 40px;
+  border-radius: 10px;
 }
 .mailcss {
   padding: 0.5cm;
   border: 3px solid tomato;
 }
-.up {
+/* .up {
   margin-bottom: 0.5cm;
+}  */
+#Email {
+  width: 99%;
+  margin: 10px auto;
+  height: 30px;
 }
+#Psswrod {
+  width: 99%;
+  margin: 10px auto;
+  height: 30px;
+}
+/* input[type="submit"] {
+  cursor: pointer;
+  /* grid-area: bt; */
+/* } */
+/* input[type="submit"]:hover { */
+/* background: violet; */
+/* color: blueviolet; */
+/* } */

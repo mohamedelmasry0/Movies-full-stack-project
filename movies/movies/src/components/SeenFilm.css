@@ -1,0 +1,9 @@
+.filmm {
+  display: flex;
+  flex-direction: column;
+  /* color: brown; */
+  justify-content: space-evenly;
+  /* align-items: center; */
+  background-color: rgb(0, 5, 4);
+  margin-bottom: 1cm;
+}

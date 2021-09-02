@@ -15,13 +15,13 @@ function ListFilm() {
   }, []);
   return (
     <>
-      <h1>List films</h1>
+      {/* <h1>List films</h1> */}
       {/* <ul className="data"> */}
       {/* <ul> */}
       <div>
         {film.map((filmMap) => (
           <li key={filmMap._id}>
-            <div className="title">{filmMap.name}</div>
+            <div className="titleList">{filmMap.name}</div>
             <img src={filmMap.link} alt="" />
           </li>
           // <FilmInList

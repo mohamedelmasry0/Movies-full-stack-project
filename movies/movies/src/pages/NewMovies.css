@@ -1,8 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 .new {
   display: flex;
 }
 .wel {
   color: chocolate;
-  margin-left: 5cm;
-  margin-bottom: 5cm;
+  /* margin-left: 3.5cm;
+  margin-bottom: 5cm; */
+  margin: 0, auto;
+}
+.consulte {
+  font-family: "Parisienne", cursive;
+  padding-left: 7cm;
+  font-size: 1cm;
+  color: blue;
+  text-shadow: 5px 3px 0px tomato;
 }

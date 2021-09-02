@@ -1,7 +1,7 @@
 import React from "react";
 import { useStateValue } from "../StateProvider";
 
-import "./Film.css";
+import "./SeenFilm.css";
 
 function SeenFilm({ link, imageFilm, title, year }) {
   const [, dispatch] = useStateValue(); //here for removing only
@@ -12,7 +12,7 @@ function SeenFilm({ link, imageFilm, title, year }) {
     });
   };
   return (
-    <div className="film">
+    <div className="filmm">
       <a href={link}>
         <img src={imageFilm} alt="" />
         <div className="spefi">

@@ -28,6 +28,7 @@ const Header = () => {
       <div className="searchBar">
 
         <input
+          id="srchbr"
           className="enterSearch"
           type={Text}
           placeholder="Enter a search term..."
