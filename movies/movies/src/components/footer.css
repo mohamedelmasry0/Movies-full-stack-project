@@ -1,0 +1,13 @@
+.footer {
+  margin-top: 30cm;
+  padding: 1rem;
+  background-color: rgb(235, 64, 144);
+  position: sticky;
+  bottom: 0;
+  /* left: 0; */
+  width: 100%;
+  left: 0%;
+}
+.footelem {
+  left: 50%;
+}

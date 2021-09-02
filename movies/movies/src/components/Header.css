@@ -27,7 +27,9 @@
   color: aliceblue;
   display: flex;
   position: absolute;
+
   left: 60%;
+
   justify-content: space-evenly;
 }
 .logLink {

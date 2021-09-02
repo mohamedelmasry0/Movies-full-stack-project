@@ -6,7 +6,9 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import { useStateValue } from "../StateProvider";
 import { auth } from "../fireBase";
 import { IconButton, ListItemIcon } from "@material-ui/core";
+
 import Home from "../pages/Home";
+
 const Header = () => {
   const [{ seen, user }] = useStateValue();
   const signingOut = () => {
@@ -14,7 +16,9 @@ const Header = () => {
       auth.signOut();
     }
   };
+
   const [searchTerm, setSearchTerm] = useState("");
+
 
   return (
     <div className="header">
@@ -22,6 +26,7 @@ const Header = () => {
         <img src="./media/images.jpg" alt="" className="header_logo" />
       </a>
       <div className="searchBar">
+
         <input
           id="srchbr"
           className="enterSearch"
@@ -47,6 +52,7 @@ const Header = () => {
               </div>
             );
           })}
+
         <IconButton>
           <SearchIcon className="searchYes" />
         </IconButton>
