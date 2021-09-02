@@ -1,5 +1,5 @@
 .sideBar {
-  background-color: rgb(253, 236, 2);
+  background-color: rgba(219, 214, 255, 0.89);
   position: fixed;
   background-position: bottom;
   background-size: 50%;
@@ -9,10 +9,15 @@
   z-index: 1;
   padding: 20px 20px 20px 20px;
   /* font-size: 25px; */
+  resize: both;
+  border-radius: 2px;
+  top: 2cm;
 }
 .sideLinks {
   color: rgb(43, 226, 98);
   /* padding-top: 40cm; */
+  font-size: 20px;
+  resize: both;
 }
 
 /* .sideBar a {
@@ -22,6 +27,48 @@
   color: #818181;
   display: block;
 } */
-.sideLinks {
-  font-size: 20px;
+.top {
+  text-shadow: 3px 1px 0px tomato;
+}
+/* .inf {
+  width: 80%;
+} */
+@media screen and (max-width: 1170px) {
+  .sideBar {
+    /* display: block;
+    padding: 100px;
+    margin: 100px 100px; */
+    width: min-content;
+  }
+}
+@media screen and (max-width: 672px) {
+  .sideBar {
+    /* display: block;
+    padding: 100px;
+    margin: 100px 100px; */
+    width: min-content;
+    top: 2.7cm;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sideBar {
+    /* display: block;
+    padding: 100px;
+    margin: 100px 100px; */
+    width: min-content;
+    top: 5cm;
+    position: absolute;
+    background-position: bottom;
+    background-size: 50%;
+    width: 81%;
+    height: 38%;
+    display: flex;
+    z-index: 1;
+    padding: 20px 20px 20px 20px;
+    /* font-size: 25px; */
+    resize: both;
+    border-radius: 2px;
+    top: 2cm;
+    margin-top: 2.8cm;
+  }
 }

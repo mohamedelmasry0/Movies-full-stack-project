@@ -33,7 +33,7 @@ const Home = () => {
 
         <Film
           imageFilm="./media/18465555.jpg"
-          title="Orange clock work"
+          title="clockwork orange"
           year="1971"
           link="https://www.allocine.fr/film/fichefilm-260/dvd-blu-ray/?cproduct=1488459"
         ></Film>

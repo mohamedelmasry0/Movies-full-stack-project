@@ -21,3 +21,46 @@
   margin-bottom: 3px;
   margin-left: 3px;
 }
+@media screen and (max-width: 1215px) {
+  .film {
+    display: block;
+    margin-bottom: 1cm;
+    /* margin-right: 8.94cm; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    /* padding: 100px;
+    margin: 100px 100px; */
+  }
+  img {
+    width: 5cm;
+  }
+  .welcome {
+    margin-left: 10cm;
+    font-family: "Parisienne", cursive;
+    /* padding-left: 7cm; */
+    font-size: 1.3cm;
+    color: rgb(70, 73, 255);
+    text-shadow: 3px 1px 0px rgb(55, 0, 255);
+  }
+  #buttt {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .film {
+    display: block;
+    margin-bottom: 1cm;
+    /* margin-right: 8.94cm; */
+    width: 50%;
+    margin-left: 3cm;
+
+    width: max-content;
+    /* padding: 100px;
+    margin: 100px 100px; */
+  }
+  img {
+    width: 5.9cm;
+  }
+}

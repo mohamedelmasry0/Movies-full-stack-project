@@ -27,7 +27,7 @@ const Film = ({ imageFilm, title, year, link }) => {
           <div className="year">{year}</div>
         </div>
       </a>
-      <button disabled={disable} onClick={seenBefore}>
+      <button disabled={disable} onClick={seenBefore} id="buttt">
         Seen{" "}
       </button>
     </div>

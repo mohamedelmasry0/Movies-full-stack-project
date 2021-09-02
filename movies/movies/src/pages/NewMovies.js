@@ -9,8 +9,11 @@ const NewMovies = () => {
       <div className="nav">
         <Navigation />
       </div>
+      <h1 className="consulte">Consultez les nouveaux films</h1>
+
       <div className="wel">
-        Consultez les nouveaux films
+        <br />
+        <br />
         <ListFilm />
       </div>
     </div>

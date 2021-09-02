@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 .welcome {
   margin-left: 10cm;
+  font-family: "Parisienne", cursive;
+  /* padding-left: 7cm; */
+  font-size: 1.3cm;
+  color: rgb(70, 73, 255);
+  text-shadow: 3px 1px 0px rgb(55, 0, 255);
 }
 .lstsn {
   display: flex;
@@ -12,4 +18,46 @@
 }
 .filmseen {
   margin-bottom: 1cm;
+}
+.seenn {
+  display: block;
+  position: absolute;
+
+  left: 14cm;
+  margin-top: 5cm;
+}
+
+@media screen and (max-width: 630px) {
+  .welcome {
+    margin-left: 5cm;
+  }
+}
+@media screen and (max-width: 1211px) {
+  .seenn {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    /* margin-left: -70%; */
+    margin-left: -9cm;
+    margin-top: 10cm;
+  }
+}
+@media screen and (max-width: 500px) {
+  .seenn {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    /* margin-left: -70%; */
+    margin-left: -9cm;
+    margin-top: 16cm;
+    flex-direction: column;
+  }
+  .welcome {
+    margin-top: 7.5cm;
+    display: flex;
+    padding-left: 0cm;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
 }

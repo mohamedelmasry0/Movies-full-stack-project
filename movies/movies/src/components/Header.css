@@ -2,11 +2,12 @@
   height: 60px;
   display: flex; /* horizontal */
   align-items: center;
-  background-color: rgb(1, 4, 48);
+  background-color: rgba(1, 4, 48, 0.95);
   position: sticky;
   top: 0;
   /* z-index: 100; */
   width: 100%;
+  border-radius: 10px;
 }
 /* img {
   width: 500px;
@@ -97,4 +98,107 @@ category .order {
 }
 .numSeen {
   color: aliceblue;
+}
+@media screen and (max-width: 1351px) {
+  #srchbr {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 887px) {
+  #srchbr {
+    width: 30%;
+  }
+  .header_nav {
+    /* padding: 10px 10px;
+    margin-top: 3px;
+    margin-bottom: 3px; */
+    left: 10cm;
+  }
+  .searchYes {
+    margin-right: 0cm;
+  }
+}
+@media screen and (max-width: 750px) {
+  #srchbr {
+    width: 30%;
+  }
+  .header_nav {
+    /* padding: 10px 10px;
+    margin-top: 3px;
+    margin-bottom: 3px; */
+    left: 8.5cm;
+  }
+  .searchYes {
+    margin-right: 0cm;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  #srchbr {
+    width: 30%;
+  }
+  .header_nav {
+    /* padding: 10px 10px;
+    margin-top: 3px;
+    margin-bottom: 3px; */
+    left: 7.8cm;
+    display: block;
+    justify-content: center;
+  }
+  .searchYes {
+    margin-right: 0cm;
+  }
+  .header {
+    height: 2.4cm;
+  }
+  .category {
+    margin-left: 0.25cm;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  #srchbr {
+    width: 30%;
+  }
+  .header_nav {
+    /* padding: 10px 10px;
+    margin-top: 3px;
+    margin-bottom: 3px; */
+    left: 7cm;
+    display: block;
+    justify-content: center;
+  }
+  .searchYes {
+    margin-right: 0cm;
+  }
+  .header {
+    height: 2.4cm;
+    width: 100%;
+  }
+  .category {
+    margin-left: 0.25cm;
+  }
+}
+@media screen and (max-width: 500px) {
+  #srchbr {
+    width: 30%;
+  }
+  .header_nav {
+    /* padding: 10px 10px;
+    margin-top: 3px;
+    margin-bottom: 3px; */
+    left: 7cm;
+    display: block;
+    justify-content: center;
+  }
+  .searchYes {
+    margin-right: 0cm;
+  }
+  .header {
+    height: 4cm;
+    width: 100%;
+  }
+  .category {
+    margin-left: 0.25cm;
+  }
 }
